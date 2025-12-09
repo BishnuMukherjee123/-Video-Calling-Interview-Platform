@@ -1,0 +1,56 @@
+# ----------------------
+# General / System Files
+# ----------------------
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----------------------
+# Dependencies
+# ----------------------
+# Ignore node_modules in root and any subdirectories (client/server)
+**/node_modules/
+
+# ----------------------
+# Environment Variables (CRITICAL)
+# ----------------------
+# Never commit your secrets or API keys!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+
+# ----------------------
+# Backend (Node/Express)
+# ----------------------
+# Optional: if you use specific build output for backend
+dist/
+build/
+coverage/
+
+# ----------------------
+# Frontend (React)
+# ----------------------
+# Production build output
+/client/build/
+/client/dist/
+
+# Testing coverage
+/client/coverage/
+
+# Misc React files
+.eslintcache
+
+# ----------------------
+# IDE / Text Editors
+# ----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
