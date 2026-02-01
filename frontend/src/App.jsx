@@ -1,8 +1,19 @@
-import React from 'react'
+import { SignedIn, SignedOut, SignInButton, SignOutButton, UserButton } from '@clerk/clerk-react'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+    <h1>AI Powered Learning Assistant</h1>
+    <SignedOut>
+      <SignInButton mode='modal'>
+        <button>Sign up please</button>
+      </SignInButton>
+    </SignedOut>
+    <SignedIn>
+      <SignOutButton />
+    </SignedIn>
+    <UserButton />
+    </>
   )
 }
 
