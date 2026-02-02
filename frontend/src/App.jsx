@@ -3,7 +3,7 @@ import { SignedIn, SignedOut, SignInButton, SignOutButton, UserButton } from '@c
 function App() {
   return (
     <>
-    <h1>AI Powered Learning Assistant</h1>
+    <h1>Welcome to the Application</h1>
     <SignedOut>
       <SignInButton mode='modal'>
         <button>Sign up please</button>
